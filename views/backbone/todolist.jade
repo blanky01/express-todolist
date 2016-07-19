@@ -1,8 +1,10 @@
 html
 head
- link(type="text/css",ret="stylesheet",href="/css/bootstrap.css")
+ title="todolist by backbone"
+ link(type="text/css",rel="stylesheet",href="/libs/bootstrap.css")
 body
- div=title
+ div(class="container-fluid")
+  include blocks/header.jade
 
  script(type="text/javascript")(src="/libs/jquery-1.10.0.js")
  script(type="text/javascript")(src="/libs/bootstrap.js")
