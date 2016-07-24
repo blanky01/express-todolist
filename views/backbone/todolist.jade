@@ -5,6 +5,24 @@ head
 body
  div(class="container-fluid")
   include blocks/header.jade
-
+  //main
+  div.row
+   div.col-md-4
+    h4='分类'
+    div
+     ul
+      li
+   div.col-md-6
+    h4='任务'
+   div.col-md-2
+    h4='操作'
+    ul.list-unstyled
+     li: button.btn.btn-primary(id=addCategory)='添加分类'
+     li: button.btn.btn-primary(id=addMember)='添加成员'
+     li: button.btn.btn-primary(id=addTask)='添加任务'
+   //middle:task list
+   //right:operate area
+  //footer
+ //script
  script(type="text/javascript")(src="/libs/jquery-1.10.0.js")
  script(type="text/javascript")(src="/libs/bootstrap.js")
